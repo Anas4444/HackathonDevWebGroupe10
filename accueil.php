@@ -1,0 +1,89 @@
+<?php
+  
+  session_start();
+  
+
+	include("config.php");
+	include("functions.php");
+
+  if(isset($_SESSION['id'])){
+    echo "welcome " .$_SESSION['email'];
+  }
+?>
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <div class="mytabs">
+        <input type="radio" id="tabhome" name="mytabs" checked="checked">
+        <label for="tabhome">Home</label>
+        <div class="tab">
+            <h1>Welcome, Admin!</h1>
+            <a href="logout.php">Déconnexion</a>
+        <div class="feat bg-gray pt-5 pb-5">
+            <div class="container2">
+            <div class="row2">
+                <div class="col-lg-42 col-sm-62">
+                <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-eye"></i></span>
+                    <h6>members management</h6>
+                    <p>We manage blabla.</p>
+                    <a class="link" href="members.html">members</a>
+                </div>
+                </div>
+                <div class="col-lg-42 col-sm-62">
+                <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-search"></i></span>
+                    <h6>materials management</h6>
+                    <p>We also manage blabla.</p>
+                    <a class="link" href="materials.html">materials</a>
+                </div>
+                </div>
+                <div class="col-lg-42 col-sm-62">
+                <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-mobile"></i></span>
+                    <h6>vault</h6>
+                    <p>Here we do blabla.</p>
+                    <a class="link" href="vault.html">vault</a>
+                </div>
+                </div>
+                <div class="col-lg-42 col-sm-62">
+                <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-laptop"></i></span>
+                    <h6>meetings</h6>
+                    <p>Our meetings are...</p>
+                    <a class="link" href="meetings.html">meetings</a>
+                </div>
+                </div>
+                <div class="col-lg-42 col-sm-62">
+                <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-shopping-cart"></i></span>
+                    <h6>keys management</h6>
+                    <p>Security is...</p>
+                    <a class="link" href="security.html">security</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <input type="radio" id="tababout" name="mytabs">
+        <label for="tababout">About</label>
+        <div class="tab">
+            <h1>ABOUT</h1>
+        </div>
+
+        <input type="radio" id="tabcontact" name="mytabs">
+        <label for="tabcontact">Contact</label>
+        <div class="tab">
+            <h1>Contact</h1>
+        </div>
+       
+        
+    </div>
+</body>
+</html>

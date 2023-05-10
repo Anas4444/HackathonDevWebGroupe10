@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <form action="index.html" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="user_surname">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender">
+              <option value="male">male</option>
+              <option value="female">female</option>
+          </select>
+          
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+
+          <label for="cpassword">Confirm password:</label>
+          <input type="password" id="cpassword" name="cuser_password">
+          
+        </fieldset>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
